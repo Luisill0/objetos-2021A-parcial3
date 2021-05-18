@@ -35,7 +35,7 @@ public class Student {
 
         for(int i = 1; i < 4; i++){
             if(scores[i] == 0){
-                throw new MissingScoreException("Missing partial 2");
+                throw new MissingScoreException("Missing partial " + i);
             }else{
                 average += scores[i];
             }
